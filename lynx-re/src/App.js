@@ -31,6 +31,7 @@ class App extends Component {
           <Route path="/admin" component={Admin} />
           <Route path="/placecard" component={CardList} />
 
+
           <Route path='*' component={NotFound} />
           <Route component={NotFound} />
 

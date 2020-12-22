@@ -21,9 +21,7 @@ function Navigation() {
                             <NavLink className="nav-link" to={"/admin"}>Administravimas</NavLink>
                         </li>
 
-                        <li className="nav-item p-1">
-                            <NavLink className="nav-link" to={"/place/new"}>Įvesti vietas</NavLink>
-                        </li>
+
 
                         <li className="nav-item p-1">
                             <NavLink className="nav-link" to={"/placecard"}>Vietos</NavLink>

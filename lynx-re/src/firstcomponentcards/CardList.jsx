@@ -41,7 +41,7 @@ class CardList extends Component {
     }
 
     render() {
-        const data = this.state.persons;
+        const data = this.state.places;
         //console.log(this.state.persons);
 
         if (data) {

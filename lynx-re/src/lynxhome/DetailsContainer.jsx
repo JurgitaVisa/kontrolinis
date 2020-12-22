@@ -31,15 +31,15 @@ class DetailsContainer extends Component {
                 return this.props.history.replace("/");
             });
 
-        httpService
-            .get(`${apiEndpoint}/api/congratulations/places/${currentId}`)
-            .then((response) => {
-                this.setState({ places: response.data });
-                console.log(response);
-            })
-            .catch((err) => {
-                console.log(err);
-            });
+        // httpService
+        //     .get(`${apiEndpoint}/api/congratulations/places/${currentId}`)
+        //     .then((response) => {
+        //         this.setState({ places: response.data });
+        //         console.log(response);
+        //     })
+        //     .catch((err) => {
+        //         console.log(err);
+        //     });
 
         httpService
             .get(`${apiEndpoint}/api/places`)
@@ -64,9 +64,7 @@ class DetailsContainer extends Component {
 
         this.setState({ searchQuery: name });
 
-        // httpService.get(`${apiEndpoint}/api/persons?name=${name}`).then((response) => {
-        //     this.setState({ places: response.data });
-        // });
+
     }
 
     handleRemoveFromList = listItem => {

@@ -9,8 +9,8 @@ import Form from '../common/Form';
 class PlaceForm extends Form {
     state = {
         data: { name: "", address: "" },
-        selectOptions: ["/samsung.jpg"],
-        selectTypeOptions: ["TVkanalas", "Interneto adresas"],
+        selectOptions: ["/somepic"],
+        // selectTypeOptions: ["TVkanalas", "Interneto adresas"],
         errors: {},
         placeId: ""
     };
@@ -18,7 +18,8 @@ class PlaceForm extends Form {
     schema = {
         id: Joi.string(),
         name: Joi.string().required().label('Name'),
-        address: Joi.string().allow('').optional()
+        address: Joi.string().allow('').optional(),
+        picture: Joi.string().allow('').optional()
     }
 
     componentDidMount() {
@@ -54,7 +55,7 @@ class PlaceForm extends Form {
 
         this.setState({ name: "", address: "" });
 
-        let back = () => { this.props.history.push("/place") };
+        let back = () => { this.props.history.push("/placecard") };
         back();
     }
 
@@ -67,7 +68,7 @@ class PlaceForm extends Form {
                 <form onSubmit={this.handleSubmit}>
                     {this.renderInput('name', 'Pavdinimas')}
                     {this.renderInput('address', 'Adresas')}
-
+                    {this.renderSelect('picture', 'Paveikslėlis', this.state.selectOptions)}
                     {this.renderButton('Saugoti')}
                 </form>
 
