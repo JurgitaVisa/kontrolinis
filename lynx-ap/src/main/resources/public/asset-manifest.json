@@ -1,0 +1,31 @@
+{
+  "files": {
+    "main.css": "/lynx-ap/static/css/main.3cbc07ed.chunk.css",
+    "main.js": "/lynx-ap/static/js/main.f5bc18f0.chunk.js",
+    "main.js.map": "/lynx-ap/static/js/main.f5bc18f0.chunk.js.map",
+    "runtime-main.js": "/lynx-ap/static/js/runtime-main.96348a9a.js",
+    "runtime-main.js.map": "/lynx-ap/static/js/runtime-main.96348a9a.js.map",
+    "static/css/2.437d98bc.chunk.css": "/lynx-ap/static/css/2.437d98bc.chunk.css",
+    "static/js/2.6867d90d.chunk.js": "/lynx-ap/static/js/2.6867d90d.chunk.js",
+    "static/js/2.6867d90d.chunk.js.map": "/lynx-ap/static/js/2.6867d90d.chunk.js.map",
+    "static/js/3.d9ccc144.chunk.js": "/lynx-ap/static/js/3.d9ccc144.chunk.js",
+    "static/js/3.d9ccc144.chunk.js.map": "/lynx-ap/static/js/3.d9ccc144.chunk.js.map",
+    "index.html": "/lynx-ap/index.html",
+    "precache-manifest.4591404593bbc104dd75cb56df7fbd46.js": "/lynx-ap/precache-manifest.4591404593bbc104dd75cb56df7fbd46.js",
+    "service-worker.js": "/lynx-ap/service-worker.js",
+    "static/css/2.437d98bc.chunk.css.map": "/lynx-ap/static/css/2.437d98bc.chunk.css.map",
+    "static/css/main.3cbc07ed.chunk.css.map": "/lynx-ap/static/css/main.3cbc07ed.chunk.css.map",
+    "static/js/2.6867d90d.chunk.js.LICENSE.txt": "/lynx-ap/static/js/2.6867d90d.chunk.js.LICENSE.txt",
+    "static/media/image.jpg": "/lynx-ap/static/media/image.c12178a7.jpg",
+    "static/media/logo1.jpg": "/lynx-ap/static/media/logo1.89bf5891.jpg",
+    "static/media/logo2.jpg": "/lynx-ap/static/media/logo2.4fe2886f.jpg",
+    "static/media/logo3.jpg": "/lynx-ap/static/media/logo3.ffa291e5.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.96348a9a.js",
+    "static/css/2.437d98bc.chunk.css",
+    "static/js/2.6867d90d.chunk.js",
+    "static/css/main.3cbc07ed.chunk.css",
+    "static/js/main.f5bc18f0.chunk.js"
+  ]
+}
