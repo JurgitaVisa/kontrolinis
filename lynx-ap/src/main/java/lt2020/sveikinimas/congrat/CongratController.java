@@ -45,7 +45,7 @@ public class CongratController {
 
 	// remove from list -- many to many
 
-	@RequestMapping(path = "{id}/places/{personId}", method = RequestMethod.DELETE)
+	@RequestMapping(path = "{id}/places/{placeId}", method = RequestMethod.DELETE)
 	@ApiOperation(value = "Remove place from list", notes = "Returns remaining places connected to congrat with specified id")
 	public List<PlaceData> deletePlaceFromList(@PathVariable final Long placeId, @PathVariable final Long id) {
 
@@ -56,7 +56,7 @@ public class CongratController {
 // add  to list -- many to many
 
 	@RequestMapping(path = "{id}/places/{placeId}", method = RequestMethod.POST)
-	@ApiOperation(value = "Add person to list", notes = "Connect place to congrat with specified id")
+	@ApiOperation(value = "Add places to list", notes = "Connect place to congrat with specified id")
 	public void addPlaceToList(@PathVariable final Long id, @PathVariable Long placeId) {
 
 		congratulationService.addPlaceToList(id, placeId);

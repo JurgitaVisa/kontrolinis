@@ -99,10 +99,10 @@ public class CongratService {
 
 	@Transactional
 	public void addPlaceToList(Long id, Long placeId) {
-		Place person = placeDao.getOne(placeId);
+		Place place = placeDao.getOne(placeId);
 
 		Congrat congr = congratDao.getOne(id);
-		congr.addPlace(person);
+		congr.addPlace(place);
 
 		congratDao.save(congr);
 

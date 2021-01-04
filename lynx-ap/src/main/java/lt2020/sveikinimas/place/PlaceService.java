@@ -82,12 +82,20 @@ public class PlaceService {
 
 	}
 
-	public PlaceDAO getPersonDao() {
+	public PlaceDAO getPlaceDao() {
 		return placeDao;
 	}
 
-	public void setPersonDao(PlaceDAO personDao) {
-		this.placeDao = personDao;
+	public void setPlaceDao(PlaceDAO placeDao) {
+		this.placeDao = placeDao;
+	}
+
+	public CongratDAO getCongratDao() {
+		return congratDao;
+	}
+
+	public void setCongratDao(CongratDAO congratDao) {
+		this.congratDao = congratDao;
 	}
 
 }
