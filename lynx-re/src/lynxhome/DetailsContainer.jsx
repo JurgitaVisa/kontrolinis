@@ -60,7 +60,7 @@ class DetailsContainer extends Component {
     handleSearch = (e) => {
 
         const name = e.currentTarget.value;
-        console.log(name);
+        //console.log(name);
 
         this.setState({ searchQuery: name });
 

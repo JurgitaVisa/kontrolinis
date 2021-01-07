@@ -8,8 +8,8 @@ import Modal from '../common/Modal';
 
 
 const CardDetails = (props) => {
-    console.log(props);
-    // pakeiti props ir pavadinimus
+    //console.log(props);
+    // pakeisti props ir pavadinimus
     const { id, name, text, person, type } = props.item;
     const img = props.item.picture === "logo1" ? img1 : (props.item.picture === "logo2" ? img2 : img3);
 
