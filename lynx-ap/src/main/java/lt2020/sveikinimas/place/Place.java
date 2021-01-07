@@ -22,7 +22,7 @@ public class Place {
 	private String picture;
 	private String address;
 
-	@ManyToMany
+	@ManyToMany (mappedBy = "places")
 	@OrderBy(value = "name asc")
 	private Set<Congrat> congratulations;
 
@@ -38,7 +38,7 @@ public class Place {
 
 	}
 
-	public void addInstitution(Congrat congratulation) {
+	public void addCongratulation(Congrat congratulation) {
 		this.congratulations.add(congratulation);
 		congratulation.addPlace(this);
 	}

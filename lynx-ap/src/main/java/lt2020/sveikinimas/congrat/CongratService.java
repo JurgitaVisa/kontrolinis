@@ -12,6 +12,8 @@ import org.springframework.transaction.annotation.Transactional;
 import lt2020.sveikinimas.place.Place;
 import lt2020.sveikinimas.place.PlaceDAO;
 import lt2020.sveikinimas.place.PlaceData;
+import lt2020.sveikinimas.congrat.CongratDAO;
+
 
 @Service
 public class CongratService {
