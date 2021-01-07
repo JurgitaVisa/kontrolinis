@@ -4,7 +4,7 @@ const Join = ({ options, onAddToList }) => {
 
     return (
         <div>
-            <h5 className="font-weight-bold py-3">Susieti su asmeniu</h5>
+            <h5 className="font-weight-bold py-3">Susieti su vieta</h5>
 
 
             <form onSubmit={onAddToList}>

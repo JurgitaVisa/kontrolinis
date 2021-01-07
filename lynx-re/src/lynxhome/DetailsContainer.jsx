@@ -64,6 +64,9 @@ class DetailsContainer extends Component {
 
         this.setState({ searchQuery: name });
 
+        httpService
+        .get(`${apiEndpoint}/api/places?name=${name}`)
+        .then(response => this.setState({ places: response.data }));
 
     }
 
@@ -74,10 +77,7 @@ class DetailsContainer extends Component {
 
         httpService.delete(`${apiEndpoint}/api/congratulations/${currentId}/places/${listItem.id}`).then((response) => {
             this.setState({ places: response.data });
-        });
-
-        let back = () => { this.props.history.push(`/congratulations/${currentId}`) }
-        back();
+        });      
 
     }
 
@@ -88,7 +88,7 @@ class DetailsContainer extends Component {
 
         console.log("try to add to list item id:", e.target.input.value);
 
-        httpService.post(`${apiEndpoint}/api/congratulations/${currentId}/places/${e.target.input.value}`).then();
+        httpService.post(`${apiEndpoint}/api/congratulations/${currentId}/places/${e.target.input.value}`).then(() => { this.props.history.push(`/congratulation/${currentId}`)});
 
         // this.props.history.push(`/`);
 
