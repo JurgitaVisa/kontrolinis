@@ -85,12 +85,6 @@ public class Place {
 		return congratulations;
 	}
 
-	public void setCongratulations(Set<Congrat> congratulations) {
-		this.congratulations = congratulations;
-	}
-
-	public Set<Congrat> getInstitutions() {
-		return congratulations;
-	}
+		
 
 }

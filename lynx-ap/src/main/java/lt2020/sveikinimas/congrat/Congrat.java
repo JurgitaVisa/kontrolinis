@@ -35,7 +35,7 @@ public class Congrat {
 	// many to many ++add, remove, get List
 	@ManyToMany
 	@JoinTable(name = "CongratPlace", joinColumns = @JoinColumn(name = "Congrat_ID"), inverseJoinColumns = @JoinColumn(name = "Place_ID"))
-	@OrderBy(value = "firstName asc")
+	@OrderBy(value = "name asc")
 	private Set<Place> places;
 
 	public Congrat() {

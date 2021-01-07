@@ -9,17 +9,13 @@ import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import lt2020.sveikinimas.congrat.Congrat;
-import lt2020.sveikinimas.congrat.CongratDAO;
 import lt2020.sveikinimas.congrat.CongratData;
 
 @Service
 public class PlaceService {
 
 	@Autowired
-	private PlaceDAO placeDao;
-
-	@Autowired
-	private CongratDAO congratDao;
+	private PlaceDAO placeDao;	
 
 	@Transactional(readOnly = true)
 	public List<PlaceData> getPlaces() {
@@ -47,7 +43,7 @@ public class PlaceService {
 	@Transactional(readOnly = true)
 	public List<CongratData> getPlaceCongrats(Long id) {
 		Place place = placeDao.getOne(id);
-		Set<Congrat> congratList = place.getInstitutions();
+		Set<Congrat> congratList = place.getCongratulations();
 		return congratList.stream()
 				.map(congr -> new CongratData(congr.getId(), congr.getName(), congr.getText(), congr.getPicture(),
 						congr.getPerson(), congr.getAudio(), congr.getType(), congr.getDate()))
@@ -90,12 +86,6 @@ public class PlaceService {
 		this.placeDao = placeDao;
 	}
 
-	public CongratDAO getCongratDao() {
-		return congratDao;
-	}
-
-	public void setCongratDao(CongratDAO congratDao) {
-		this.congratDao = congratDao;
-	}
+	
 
 }
