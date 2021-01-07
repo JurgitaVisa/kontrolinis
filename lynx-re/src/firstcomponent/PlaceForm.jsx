@@ -66,7 +66,7 @@ class PlaceForm extends Form {
 
                 <h5 className="pb-3">Duomenų Forma</h5>
                 <form onSubmit={this.handleSubmit}>
-                    {this.renderInput('name', 'Pavdinimas')}
+                    {this.renderInput('name', 'Vietos pavadinimas')}
                     {this.renderInput('address', 'Adresas')}
                     {this.renderSelect('picture', 'Paveikslėlis', this.state.selectOptions)}
                     {this.renderButton('Saugoti')}

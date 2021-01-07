@@ -72,8 +72,8 @@ class AdminForm extends Form {
 
                 <h5 className="pb-3">Administratoriaus Forma</h5>
                 <form onSubmit={this.handleSubmit}>
-                    {this.renderInput('name', 'Pavadinimas')}
-                    {this.renderInput('text', 'Tekstas')}
+                    {this.renderInput('name', 'Sveikinimo pavadinimas')}
+                    {this.renderInput('text', 'Sveikinimo tekstas')}
                     {this.renderSelect('picture', 'Paveikslėlio url', this.state.selectOptions)}
                     {this.renderInput('person', 'Asmuo')}
                     {this.renderSelect('type', 'Tipas', this.state.selectTypeOptions)}

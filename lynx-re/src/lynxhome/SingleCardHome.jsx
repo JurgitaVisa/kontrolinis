@@ -22,7 +22,7 @@ function SingleCardHome(props) {
         <div className="col d-flex justify-content-center pb-2">
             <div className="card" >
                 <div className="text-center">
-                    <img src={itemImg} className="home-card card-img-top pt-1" alt={name} />
+                    <img src={itemImg} className="home-card card-img-top py-5" alt={name} />
                 </div>
                 <div className="card-body">
                     <h5 className="card-title">{name}</h5>
