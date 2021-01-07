@@ -8,7 +8,7 @@
   }
 
   .align-self-start {
-    height: 10rem;  
+    height: 5rem;  
   }
   
   .card {
@@ -16,11 +16,16 @@
   }  
   
 
-.card-img-top {
+.home-card {
   width: 100%;
+  max-height: 4rem;
+}
+
+.place {
+  width: 100%; 
 }
 
 tbody img {
-  width: 3rem;
+  width: 5rem;
 }
 
